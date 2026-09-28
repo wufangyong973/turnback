@@ -7,7 +7,7 @@
     "turnback": "dist/cli.js"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "node api.js && tsc -p tsconfig.json",
     "test": "vitest run",
     "bench": "npm run build && node scripts/benchmark.mjs",
     "check": "npm run build && npm test"
