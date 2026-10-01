@@ -40,7 +40,7 @@
     "skills"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json --noEmit && node scripts/bundle.mjs",
+    "build": "node api.js && tsc -p tsconfig.json --noEmit && node scripts/bundle.mjs",
     "test": "vitest run",
     "bench": "npm run build && node scripts/benchmark.mjs",
     "check": "npm run build && npm test",
